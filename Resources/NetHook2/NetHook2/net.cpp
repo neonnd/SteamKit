@@ -24,6 +24,7 @@ CNet::CNet() noexcept
 	CSimpleScan steamClientScan(STEAMCLIENT_DLL);
 
 	BBuildAndAsyncSendFrameFn pBuildFunc = nullptr;
+	// Hellooo github actionnsss?
 	const bool bFoundBuildFunc = steamClientScan.FindFunction(
 #ifdef X64BITS
 		"\x48\x8B\xC4\x55\x48\x8D\x68\x00\x48\x81\xEC\x00\x00\x00\x00\x48\x89\x70\x00\x49\x8B\xF0\x48\x89\x78\x00\x4C\x89\x60",
